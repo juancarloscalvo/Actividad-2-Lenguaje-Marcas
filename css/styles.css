@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Breaking Bad';
-    src: url('/font/Breaking\ Bad.ttf') format('truetype');
+    src: url('../font/Breaking\ Bad.ttf') format('truetype');
 }
 
 :root {
@@ -24,12 +24,12 @@ body {
 }
 
 .fondo {
-    background-image: url('/img/fondo.jpg');
+    background-image: url('../img/fondo.jpg');
     background-size: cover;
 }
 
 .logo {
-    background-image: url('/img/logo.png');
+    background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
