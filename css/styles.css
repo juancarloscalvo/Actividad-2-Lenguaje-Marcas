@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Breaking Bad';
     src: url('/font/Breaking\ Bad.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 :root {
@@ -10,6 +8,14 @@
     --fuente-resto: Helvetica;
 }
 
+body {
+    background-color: #0c3e11;
+    font-family: var(--fuente-resto);
+    color: white;
+    text-align: center;
+}
+
+/* Estilos de la página index.html */
 .poster {
     width: 700px;
     height: 300px;
@@ -17,37 +23,359 @@
     border-radius: 22px;
 }
 
-body {
-    background-color: #0c3e11;
-    font-family: var(--fuente-resto);
-    color: white;
-}
-
-form {
-    width: 300px;
-}
-
-form > * {
-    margin: 10px;
-}
-
 .fondo {
     background-image: url('/img/fondo.jpg');
     background-size: cover;
 }
 
-figure {
-    text-align: center;
+.logo {
+    background-image: url('/img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100% !important;
+    height: 200px !important;
 }
 
 .texto {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     font-family: var(--fuente-bbad);
-    text-align: center;
 }
 
-.logo {
-    width: 200px;
-    height: 200px;
+
+/* Estilos de la página de Formulario.html */
+
+form {
+    border: white 2px solid;
+    background-color: rgba(145, 145, 145, 0.5);
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: left;
+    padding: 2rem;
+}
+
+.campo {
+    margin: 10px;
+    width: 90%;
+}
+
+.campo-sexo {
+    margin: 10px;
+    width: 100px;
+}
+
+.campo-field {
+    width: 90%;
+    margin: 10px;
+    height: 5rem;
+}
+
+.botones {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.botones > input {
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de la página de Tabla.html */
+.titulo {
+    background-image: url('../img/cabecera.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    margin-top: 15em;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+.tabla-superior {
+    width: 57%;
+}
+
+td {
+    font-size: 10px;
+    width: 60px;
+    height: 60px;
+    color: black;
+    border: 8px solid black;
+    padding: 5px;
+}
+
+
+
+/* Imagenes de tabla */
+.walter {
+    background-image: url('../img/tabla/walterwhite.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 120px;
+    line-height: 0px;
+    background-color: #b8dc15;
+}
+
+.skylerwhite {
+    background-image: url('../img/tabla/skylerwhite.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 120px;
+    line-height: 1rem;
+    vertical-align: top;
+    background-color: #b8dc15;
+}
+
+.hankschrader {
+    background-image: url('../img/tabla/hankschrader.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #b8dc15;
+}
+
+.mariaschrader {
+    background-image: url('../img/tabla/marieschrader.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 1rem;
+    vertical-align: top;
+    background-color: #ab8fcc;
+}
+
+.saulgoodman {
+    background-image: url('../img/tabla/saulgoodman.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #89a419;
+}
+
+.jessiepinkman {
+    background-image: url('../img/tabla/jessiepinkman.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #89a419;
+}
+
+.badger {
+    background-image: url('../img/tabla/badger.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 1.5rem;
+    vertical-align: top;
+    background-color: #637124;
+}
+
+.hectorsalamanca {
+    background-image: url('../img/tabla/hectorsalamanca.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #c5e344;
+}
+
+.tucosalamanca {
+    background-image: url('../img/tabla/tucosalamanca.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #c5e344;
+}
+
+.gustavofring {
+    background-image: url('../img/tabla/gustavofrink.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #bcc49f;
+}
+
+.mike {
+    background-image: url('../img/tabla/mike.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #bcc49f;
+}
+
+.gale {
+    background-image: url('../img/tabla/gale.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+    vertical-align: top;
+    background-color: #bcc49f;
+}
+
+/* Letras con fondo */
+.letra-img-superior {
+    margin-top: 5rem;
+    margin-bottom: 0.7em;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.letra-img-inferior {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.letra-tabla-superior {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0.5rem;
+}
+
+.letra-tabla-inferior {
+    margin: 0.1em;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+/* Colores de celda sin imagen */
+.td-verde {
+    line-height: 0.7rem;
+    background-color: #b8dc15;
+}
+
+.td-verdeOscuro {
+    background-color: #89a419;
+    line-height: 0.7rem;
+}
+
+.td-verdeBosque {
+    background-color: #637124;
+    line-height: 0.7rem;
+}
+
+.td-lima {
+    background-color: #c5e344;
+    line-height: 0.7rem;
+}
+
+.td-blanco {
+    background-color: #eff6cc;
+    line-height: 0.7rem;
+}
+
+.td-gris {
+    background-color: #bcc49f;
+    line-height: 0.7rem;
+}
+
+.td-verdeOliva {
+    background-color: #818d52;
+    line-height: 0.7rem;
+}
+
+.td-otros {
+    background-color: #d5e87c;
+    line-height: 0.7rem;
+}
+
+.td-otros p + p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* Tabla inferior */
+.bus {
+    background-image: url('../img/tabla/bus.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pistola {
+    background-image: url('../img/tabla/pistola.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pocima {
+    background-image: url('../img/tabla/pocima.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movil {
+    background-image: url('../img/tabla/movil.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mosca {
+    background-image: url('../img/tabla/mosca.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cristal {
+    background-image: url('../img/tabla/cristal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pizza {
+    background-image: url('../img/tabla/pizza.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.calzoncillos {
+    background-image: url('../img/tabla/calzoncillos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mascara {
+    background-image: url('../img/tabla/mascara.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato {
+    background-image: url('../img/tabla/plato.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tabla-inferior, .tabla-inferior td {
+    margin-top: 3rem;
+    background-color: #c2c629;
+
+}
+
+.tabla-inferior td {
+    padding: 5px;
+    width: 75px;
+    height: 75px;
 }

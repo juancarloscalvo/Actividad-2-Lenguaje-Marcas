@@ -8,32 +8,38 @@
     <title>Breaking Bad - Que comience el juego!</title>
 </head>
 <body>
-    <form action="mailto:no.pope@gmail.com" method="post" autocomplete="on">
-        Nombre: <input type="text" name="nombre" placeholder="Nombre" required><br>
-        Apellidos: <input type="text" name="apellidos" placeholder="Apellidos" required><br>
-        Dirección: <input type="text" name="direccion" placeholder="Dirección Postal"><br>
-        DNI: <input type="text" name="dni" placeholder="DNI"><br>
-        Email: <input type="email" name="email" placeholder="Email" required><br>
-        <fieldset>
-            <input type="radio" id="sexo" name="sexo" value="Hombre" />
-            <label for="Hombre">Hombre</label>
-            <input type="radio" id="sexo" name="sexo" value="Mujer" />
-            <label for="Hombre">Mujer</label>
-        </fieldset><br>
-        Fecha de nacimiento: <input type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento"><br>
-        Selecciona un personaje:
-        <select>
-            <option value="Jessie Pinkman">Jessie Pinkman</option>
-            <option value="Walter White">Walter White</option>
-            <option value="Saul Goodman">Saul Goodman</option>
-            <option value="Gustavo Fring">Gustavo Fring</option>
-            <option value="Pollos Hermanos">Pollos Hermanos</option>
-            <option value="Otros personajes">Otros personajes</option>
-        </select><br>
-        Comentarios: <br><textarea name="comentarios" placeholder="Comentarios" ></textarea><br>
-        Archivos adjuntos: <input type="file" name="archivos" accept="*"><br><br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-    </form>
+    <div class="formulario">
+        <h1>Formulario de datos</h1>
+        <form action="mailto:no.pope@gmail.com" method="post" autocomplete="on">
+            Nombre: <input class="campo" type="text" name="nombre" placeholder="Nombre" required>
+            Apellidos: <input class="campo" type="text" name="apellidos" placeholder="Apellidos" required>
+            Dirección: <input class="campo" type="text" name="direccion" placeholder="Dirección Postal">
+            DNI: <input class="campo" type="text" name="dni" placeholder="DNI">
+            Email: <input class="campo" type="email" name="email" placeholder="Email" required>
+            Sexo:
+            <fieldset class="campo-sexo">
+                <input type="radio" id="sexo" name="sexo" value="Hombre" />
+                <label for="Hombre">Hombre</label>
+                <input type="radio" id="sexo" name="sexo" value="Mujer" />
+                <label for="Hombre">Mujer</label>
+            </fieldset>
+            Fecha de nacimiento: <input class="campo" type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento">
+            Selecciona un personaje:
+            <select class="campo">
+                <option value="Jessie Pinkman">Jessie Pinkman</option>
+                <option value="Walter White">Walter White</option>
+                <option value="Saul Goodman">Saul Goodman</option>
+                <option value="Gustavo Fring">Gustavo Fring</option>
+                <option value="Pollos Hermanos">Pollos Hermanos</option>
+                <option value="Otros personajes">Otros personajes</option>
+            </select><br>
+            Comentarios: <br><textarea class="campo-field" name="comentarios" placeholder="Comentarios" ></textarea>
+            Archivos adjuntos: <input class="campo" type="file" name="archivos" accept="*">
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
