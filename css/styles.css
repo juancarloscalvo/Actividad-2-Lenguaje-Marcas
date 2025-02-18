@@ -13,6 +13,7 @@ body {
     font-family: var(--fuente-resto);
     color: white;
     text-align: center;
+    height: 100vh
 }
 
 /* Estilos de la página index.html */
@@ -26,6 +27,8 @@ body {
 .fondo {
     background-image: url('../img/fondo.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo {
